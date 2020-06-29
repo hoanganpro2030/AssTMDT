@@ -13,7 +13,7 @@ class Util():
         accessKey = "2v9LtQc2rqVaAqMw"
         serectkey = '9mDMxZ3O3bLVJY2RdMjSIV13O30Gdqbe'
         orderInfo = "pay with MoMo"
-        returnUrl = "https://momo.vn/return"
+        returnUrl = "127.0.0.1:5000"
         notifyurl = "https://dummy.url/notify"
         orderId = str(uuid.uuid4())
         requestId = str(uuid.uuid4())

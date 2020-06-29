@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>hello</title>
+    <title>Payment Gate</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
@@ -15,19 +15,24 @@
         <fieldset>
         <legend><span class="number">1</span> Thông tin khách hàng</legend>
         <input type="text" name="field1" placeholder="Your Name *">
-        <input type="email" name="field2" placeholder="Your Phone Number *">
+        <input type="text" name="field2" placeholder="Your Phone Number *">
         <textarea name="field3" placeholder="About yourself"></textarea>
             
         </fieldset>
         <fieldset>
         <legend><span class="number">2</span> Thông tin đơn hàng</legend>
-        <label for="job">Học làm người</label>
-        <input type="number" name="field3" placeholder="Số  lượng">
+        <label for="job">Tên sách : Học làm người</label>
+        </fieldset>
+        <fieldset>
+        <div class="row">
+            <label class="col-4" for="job">Số lượng</label>
+            <input class='col-2' type="number" name="field3">
+        </div>
         </fieldset>
         <label for="job"></label>
         <legend>Số tiền:</legend>
-        <input type="number" name="amount">
-        <input type="submit" value="Apply" />
+        <input type="number" name="amount" required>
+        <input type="submit" value="Thanh Toán" />
         </form>
         </div>
 </body>
